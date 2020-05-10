@@ -58,7 +58,7 @@ Before starting the application run Redis.
 Run the application.
 
 ```
-% java -jar target/char.jar
+% java -jar target/chat.jar
 ```
 
 Open http://localhost:8080/ in your web browser, then you'll get the chat UI.
