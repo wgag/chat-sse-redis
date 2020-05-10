@@ -33,7 +33,7 @@ public class RedisSubscribeBean {
         client.shutdown();
     }
 
-    public void subscribe(Consumer<Message> callback) {
+    public void listener(Consumer<Message> callback) {
         commands.observeChannels().doOnNext(message -> {
             try {
                 String payload = message.getMessage();

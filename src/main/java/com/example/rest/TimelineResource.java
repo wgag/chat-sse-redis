@@ -23,7 +23,7 @@ public class TimelineResource {
     @GET
     @Produces(MediaType.SERVER_SENT_EVENTS)
     public void timeline(@Context SseEventSink eventSink, @Context Sse sse) {
-        redisSubscribeBean.subscribe(message -> {
+        redisSubscribeBean.listener(message -> {
             OutboundSseEvent event = sse.newEventBuilder()
                     .mediaType(MediaType.APPLICATION_JSON_TYPE)
                     .data(Message.class, message)
