@@ -33,8 +33,7 @@ public class RedisPublishBean {
     public void publish(Message message) {
         try {
             String json = new ObjectMapper().writeValueAsString(message);
-            commands.publish("channel", json)
-                    .subscribe();
+            commands.publish("channel", json).subscribe();
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
