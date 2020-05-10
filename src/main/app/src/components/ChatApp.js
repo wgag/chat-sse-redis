@@ -1,3 +1,5 @@
+// see also https://qiita.com/classfox/items/c27be0162076dd4bf539
+
 import React, { Component } from 'react';
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
 import Editor from './Editor.js'

@@ -1,3 +1,5 @@
+// see also https://qiita.com/classfox/items/c27be0162076dd4bf539
+
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';

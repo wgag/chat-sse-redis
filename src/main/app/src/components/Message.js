@@ -1,3 +1,5 @@
+// see also https://qiita.com/classfox/items/c27be0162076dd4bf539
+
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import List from '@material-ui/core/List';
